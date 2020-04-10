@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>D Goomani</title>
+    <style>
+      body {
+        background-color: black;
+        background-image: url('dgoomani-s.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      }
+      /* landscape only */
+      @media only screen and (orientation: landscape) {
+        body {
+          background-position: top;
+        }
+      }
+      /* above 640px */
+      @media only screen and (min-width: 640px) {
+        body {
+            background-image: url('dgoomani-m.jpg');
+          }
+      }
+      /* above 990px */
+      @media only screen and (min-width: 990px) {
+        body {
+            background-image: url('dgoomani.jpg');
+          }
+      }
+      /* iPhone portrait */
+      @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 736px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: portrait) {
+          body {
+            background-image: url('dgoomani-640.jpg');
+          }
+        }
+    </style>
+  </head>
+  <body>
+  </body>
+</html>
